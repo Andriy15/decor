@@ -1,0 +1,36 @@
+@import "utilities/mixins";
+
+.l-container {
+    height: 5800px;
+    display: flex;
+    flex-direction: column;
+    .l-header {
+        background: $color-white;
+        width: 100vw;
+        height: 100px;
+    }
+
+    .l-content {
+        .content-top {
+            width: 100vw;
+            height: 1000px;
+            background: $color-bg;
+        }
+
+        .content-middle {
+            width: 100vw;
+            height: 1700px;
+            background: $color-white;
+        }
+
+        .content-bottom {
+            width: 100vw;
+            height: 2000px;
+        }
+    }
+
+    .l-footer {
+        width: 100vw;
+        height: 100vh;
+    }
+}

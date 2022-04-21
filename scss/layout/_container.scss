@@ -1,14 +1,10 @@
 @import "utilities/mixins";
 
 .l-container {
+    width: 100vw;
     height: 5800px;
     display: flex;
     flex-direction: column;
-    .l-header {
-        background: $color-white;
-        width: 100vw;
-        height: 100px;
-    }
 
     .l-content {
         .content-top {
@@ -32,5 +28,11 @@
     .l-footer {
         width: 100vw;
         height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .l-container {
+        width: 100vw;
     }
 }

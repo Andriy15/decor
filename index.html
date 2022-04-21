@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name='viewport' content='width=device-width,initial-scale=1'/>
     <meta content='true' name='HandheldFriendly'/>
     <meta content='width' name='MobileOptimized'/>
     <meta content='yes' name='apple-mobile-web-app-capable'/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
     <title>Decor</title>
 </head>
 <body>
     <div class="l-container">
-        <section class="l-header">
-            <div class="header-span">
-                <div class="header-rectungle"></div>
-                <span class="m-r-30"><a href="#" class="home">Home</a></span>
-                <span class="m-r-30"><a href="#">About</a></span>
-                <span class="m-r-40"><a href="#">Contact</a></span>
+        <nav class="navbar">
+
+            <div class="logo_header">
+                <a href="#" class="logo">Logo</a>
+                
+                <button class="navbar_toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </section>
+        
+            
+            <ul class="main_nav">
+                <li>
+                    <a href="#" class="nav_links">Home</a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav_links">About</a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav_links">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
         <section class="l-content">
             <div class="content-top">
@@ -141,36 +161,48 @@
 
                 <div class="bottom-photos">
                     <div class="photo-row-1">
-                        <img
-                            src="/images/paint1.jpeg"
-                            alt="">
-                    
-                        <img 
-                            src="/images/paint2.jpeg" 
-                            alt="">
-                                       
-                        <img
-                            src="/images/paint3.jpeg"
-                            alt="">
+                        <div class="photo-box">
+                            <img
+                                src="/images/paint1.jpeg"
+                                alt="">
+                        </div>
+                        
+                        <div class="photo-box">
+                            <img 
+                                src="/images/paint2.jpeg" 
+                                alt="">
+                        </div>
+                        
+                        <div class="photo-box">
+                            <img
+                                src="/images/paint3.jpeg"
+                                alt="">
+                        </div>
                     </div>
 
                     <div class="photo-row-2">
-                        <img
-                            src="/images/paint4.jpeg"
-                            alt="">
+                        <div> class="photo-box"
+                            <img
+                                src="/images/paint4.jpeg"
+                                alt="">
+                        </div>
                     
-                        <img
-                            src="/images/paint5.jpeg" 
-                            alt="">
+                        <div class="photo-box">
+                            <img
+                                src="/images/paint5.jpeg" 
+                                alt="">
+                        </div>
 
-                        <img
-                            src="/images/paint6.jpeg"
-                            alt="">
+                        <div class="photo-box">
+                            <img
+                                src="/images/paint6.jpeg"
+                                alt="">
+                        </div>
                     </div>
+                </div>
 
-                    <div class="link">
-                        <a href="https://twitter.com/cikulaj" target="_blank">Посилання на Twitter</a>
-                    </div>
+                <div class="link">
+                    <a href="https://twitter.com/cikulaj" target="_blank">Посилання на Twitter</a>
                 </div>
 
                 <div class="bottom-developer">
@@ -196,6 +228,11 @@
                     <p><a href="#">вулиця Українська, Івано-Франківська область 77300</a></p>
                     <p><a href="tel:0952019501" class="underl">0952019501</a></p>
                     <p><a href="mailto:andriychikulay@gmail.com">andriychikulay@gmail.com</a></p>
+
+                    <div class="info-icons">
+                        <img src="/images/facebook-svgrepo-com.svg" alt="">
+                        <img src="/images/instagram-svgrepo-com.svg" alt="">
+                    </div>
                 </div>
 
                 <div id="map">
@@ -232,6 +269,6 @@
         </section>
     </div>
 
-    
+    <script src="/app.js"></script>
 </body>
 </html>

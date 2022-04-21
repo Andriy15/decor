@@ -1,27 +1,25 @@
 @import "utilities/mixins";
 
 .l-container {
+    font-family: 'Roboto', sans-serif;
     width: 100vw;
-    height: 5800px;
+    height: 5900px;
     display: flex;
     flex-direction: column;
 
     .l-content {
         .content-top {
             width: 100vw;
-            height: 1000px;
             background: $color-bg;
         }
 
         .content-middle {
             width: 100vw;
-            height: 1700px;
             background: $color-white;
         }
 
         .content-bottom {
             width: 100vw;
-            height: 2000px;
         }
     }
 
@@ -34,5 +32,10 @@
 @media only screen and (max-width: 600px){
     .l-container {
         width: 100vw;
+        height: 7250px;
+
+        .content-bottom {
+            height: 1400px;
+        }
     }
 }

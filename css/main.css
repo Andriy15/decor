@@ -9,7 +9,7 @@ body {
 .l-container {
   font-family: "Roboto", sans-serif;
   width: 100vw;
-  height: 5850px;
+  height: 6850px;
   display: flex;
   flex-direction: column;
 }
@@ -258,7 +258,7 @@ a {
   margin-top: 10px;
 }
 .l-content .svg-header {
-  fill: rgb(251, 207, 104);
+  fill: rgb(255, 202, 77);
   width: 50px;
   height: 50px;
 }
@@ -354,7 +354,7 @@ a {
   margin-top: 50px;
   width: 350px;
   height: 50px;
-  background: rgb(251, 207, 104);
+  background: rgb(255, 202, 77);
 }
 .l-content .link:hover {
   opacity: 0.8;
@@ -389,7 +389,7 @@ a {
   font-weight: 300;
   font-size: 1.5625rem;
   filter: brightness(0.75);
-  color: rgb(251, 207, 104);
+  color: rgb(255, 202, 77);
 }
 .l-content .bottom-developer .dev p {
   opacity: 0.6;
@@ -582,7 +582,7 @@ a {
     margin-top: 10px;
   }
   .l-content .svg-header {
-    fill: rgb(251, 207, 104);
+    fill: rgb(255, 202, 77);
     width: 50px;
     height: 50px;
   }
@@ -690,7 +690,7 @@ a {
     margin-top: 30px;
     width: 370px;
     height: 30px;
-    background: rgb(251, 207, 104);
+    background: rgb(255, 202, 77);
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -733,7 +733,7 @@ a {
     font-weight: 300;
     font-size: 1.25rem;
     filter: brightness(0.75);
-    color: rgb(251, 207, 104);
+    color: rgb(255, 202, 77);
   }
   .l-content .bottom-developer .dev p {
     opacity: 0.6;
@@ -1281,4 +1281,20 @@ a {
 
 .blue {
   color: rgb(92, 114, 181);
+}
+
+.l-h-10 {
+  line-height: 10px;
+}
+
+.l-h-15 {
+  line-height: 15px;
+}
+
+.l-h-20 {
+  line-height: 20px;
+}
+
+.l-h-30 {
+  line-height: 30px;
 }

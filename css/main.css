@@ -9,7 +9,7 @@ body {
 .l-container {
   font-family: "Roboto", sans-serif;
   width: 100vw;
-  height: 5900px;
+  height: 5850px;
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +26,7 @@ body {
 }
 .l-container .l-footer {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -258,7 +258,7 @@ a {
   margin-top: 10px;
 }
 .l-content .svg-header {
-  fill: rgb(231, 231, 0);
+  fill: rgb(251, 207, 104);
   width: 50px;
   height: 50px;
 }
@@ -277,8 +277,8 @@ a {
   width: 65vw;
 }
 .l-content .content-middle .content-text p {
+  line-height: 30px;
   text-align: center;
-  margin: 0;
 }
 .l-content .content-middle .middle-part {
   display: flex;
@@ -347,27 +347,25 @@ a {
   height: 380px;
 }
 .l-content .link {
-  margin-left: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 540px;
   margin-top: 50px;
-  width: 460px;
+  width: 350px;
   height: 50px;
-  background: rgb(231, 231, 0);
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+  background: rgb(251, 207, 104);
+}
+.l-content .link:hover {
+  opacity: 0.8;
 }
 .l-content .link a {
+  font-weight: 500;
   display: flex;
+  justify-content: center;
   color: #000000;
   text-decoration: none;
-  margin: 0 70px;
-  font-size: 1.875rem;
-}
-.l-content .link a:hover {
-  opacity: 0.6;
+  font-size: 1.4375rem;
 }
 .l-content .bottom-developer {
   width: 100vw;
@@ -391,7 +389,7 @@ a {
   font-weight: 300;
   font-size: 1.5625rem;
   filter: brightness(0.75);
-  color: rgb(231, 231, 0);
+  color: rgb(251, 207, 104);
 }
 .l-content .bottom-developer .dev p {
   opacity: 0.6;
@@ -458,7 +456,7 @@ a {
 .l-footer .f-bottom {
   width: 100vw;
   height: 100px;
-  background: rgb(44, 40, 40);
+  background: rgb(57, 52, 52);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -584,7 +582,7 @@ a {
     margin-top: 10px;
   }
   .l-content .svg-header {
-    fill: rgb(231, 231, 0);
+    fill: rgb(251, 207, 104);
     width: 50px;
     height: 50px;
   }
@@ -692,7 +690,7 @@ a {
     margin-top: 30px;
     width: 370px;
     height: 30px;
-    background: rgb(231, 231, 0);
+    background: rgb(251, 207, 104);
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -735,7 +733,7 @@ a {
     font-weight: 300;
     font-size: 1.25rem;
     filter: brightness(0.75);
-    color: rgb(231, 231, 0);
+    color: rgb(251, 207, 104);
   }
   .l-content .bottom-developer .dev p {
     opacity: 0.6;
@@ -804,7 +802,7 @@ a {
     text-align: center;
     width: 100vw;
     height: 100px;
-    background: rgb(44, 40, 40);
+    background: rgb(57, 52, 52);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1267,6 +1265,14 @@ a {
 
 .fz-22 {
   font-size: 1.375rem;
+}
+
+.fz-24 {
+  font-size: 1.5rem;
+}
+
+.fz-26 {
+  font-size: 1.625rem;
 }
 
 .white {

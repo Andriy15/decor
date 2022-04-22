@@ -256,8 +256,8 @@ a {
             width: 65vw;
 
             p { 
-                text-align: center;
-                margin: 0;
+                line-height: 30px;
+                text-align: center;;
             }
         }
 
@@ -342,24 +342,26 @@ a {
     }
 
     .link {
-        margin-left: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 540px;
         margin-top: 50px;
-        width: 460px;
+        width: 350px;
         height: 50px;
         background: $color-yellow;
-        @include border-radius(4px);
-        @include box-shadow(2px, 2px, 5px);
+
+        &:hover {
+            opacity: .8;
+        }
 
         a {
+            font-weight: 500;
             display: flex;
+            justify-content: center;
             color: $color-black;
             text-decoration: none;
-            margin: 0 70px;
-            font-size: rem(30px);
-
-            &:hover {
-                opacity: .6;
-            }
+            font-size: rem(23px);
         }
     }
 

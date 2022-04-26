@@ -40,7 +40,6 @@ a {
 }
 .logo_header {
     display: flex;
-    margin-left: 2%;
 }
 
 .main_nav {
@@ -49,6 +48,8 @@ a {
     float: right;
     justify-content: space-between;
     list-style: none;
+    margin-right: 10px;
+                
 
     li:hover {
         background-color: gray

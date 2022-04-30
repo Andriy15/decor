@@ -14,47 +14,21 @@ const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
 
-const cssLoader = extra => {
-    const loaders = [
-        {
-            loader: MiniCssExtractPlugin.loader,
-            options: {},
-          },
-            'css-loader'
-        ]
-
-        if(extra) {
-            loaders.push.extra
-        }
-
-    return loaders
-}
-
-
 const plugins = () => {
     const base = [
         new HTMLWebpackPlugin({
             template: './index.html',
-            minify: {
-                collapseWhitespace: isProd
-            },
         }),
         new CleanWebpackPlugin(),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, 'src/images'),
-                    to: path.resolve(__dirname, 'dist/images')
-                }
-            ]
-        }),
         new MiniCssExtractPlugin({
-            filename: '[name].css'
+            filename: '[name].css',
+            chunkFilename: '[name].css',
         })
     ]
+
     if(isProd){
         base.push(new BundleAnalyzerPlugin())
-    }   
+    }
 
     return base
 }
@@ -64,15 +38,15 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './app.js',
-        photoswipe: './photoswipe.js'
+        main: './js/app.js'
     },
     output: {
         filename: '[name].js',
+        assetModuleFilename: 'images/[name][ext]',
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.js', '.json']
+        extensions: ['.js', '.scss']
     },
     optimization: {
         splitChunks: {
@@ -81,66 +55,50 @@ module.exports = {
         minimizer: [
             new CssMinimizerPlugin(),
             new TerserWebpackPlugin()
-          ],
+        ],
 
-    },
-    devServer: {
-        port: 4200,
-        hot: isDev
     },
     plugins: plugins(),
     module: {
         rules: [
-            // {
-            //     test: /\.(html)$/,
-            //     use: {
-            //         loader: 'html-loader',
-            //         options: {
-            //             sources: {
-            //                 list: [
-            //                     {
-            //                         tag: "img",
-            //                         type: "src",
-            //                     },
-            //                 ]
-            //             }
-            //         }
-            //     },
-            // },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
             {
                 test: /\.css$/,
-                use: cssLoader
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
             {
-                test: /\.scss$/,
+                test: /\.s[ac]ss$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.(.png|.jpg|.jpeg|.svg)$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    // Translates CSS into CommonJS
-                    "css-loader",
-                    // Compiles Sass to CSS
-                    "sass-loader",
-                ],
-            },
-            {
-                test: /\.(png|jpg|jpeg|svg)$/,
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        name: '[path][name].[ext]',
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: 'fonts/[name].[ext]',
+                        },
                     },
-                }
+                ],
             },
             {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
                 use: {
-                  loader: "babel-loader",
-                  options: {
-                    presets: ['@babel/preset-env'],
-                    plugins: [
-                        '@babel/plugin-proposal-class-properties'
-                    ]
-                  }
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env'],
+                        plugins: [
+                            '@babel/plugin-proposal-class-properties'
+                        ]
+                    }
                 }
             }
         ]

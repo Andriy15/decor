@@ -1,8 +1,11 @@
-import './scss/main.scss'
-import 'normalize.css'
+// style
+import '../scss/main.scss'
+import '../../node_modules/normalize.css/normalize.css'
+import '../../node_modules/photoswipe/dist/photoswipe.css';
+
+// js
 import './babel'
-
-
+import './photoswipe'
 
 const navToggle = document.querySelector(".navbar_toggle");
 const links = document.querySelector(".main_nav");

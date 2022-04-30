@@ -5,7 +5,8 @@
     "homepage": "https://andriy15.github.io/decor",
     "private": true,
     "scripts": {
-        "dev": "cross-env NODE_ENV=development webpack --mode development --watch",
+        "dev": "rm -rf dist && cross-env NODE_ENV=development webpack --mode development",
+        "watch": "rm -rf dist && webpack-dev-server --mode development --open --hot && cross-env NODE_ENV=development webpack --mode development --watch",
         "build": "cross-env NODE_ENV=production webpack --mode production",
         "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
         "stats": "webpack --json > stats.json && webpack-bindle-analyzer stats.json",
@@ -33,6 +34,7 @@
         "html-loader": "^3.1.0",
         "mini-css-extract-plugin": "^2.6.0",
         "node-sass": "^7.0.1",
+        "photoswipe": "github:dimsemenov/photoswipe#v5-beta",
         "resolve-url-loader": "^5.0.0",
         "sass-loader": "^12.6.0",
         "source-map-loader": "^3.0.1",
@@ -48,7 +50,6 @@
         "html": "^1.0.0",
         "html-webpack-plugin": "^5.5.0",
         "normalize.css": "^8.0.1",
-        "photoswipe": "^5.2.4",
         "sass": "^1.50.0",
         "webpack-plugin": "^1.0.5"
     }

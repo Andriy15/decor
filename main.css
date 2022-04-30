@@ -667,6 +667,7 @@ body {
 .l-content .bottom-photos .photo-box .photo {
   overflow: hidden;
   background: #000000;
+  max-height: 300px;
 }
 .l-content .bottom-photos .photo-box img {
   object-fit: cover;
@@ -677,7 +678,7 @@ body {
 }
 .l-content .bottom-photos .photo-box img:hover {
   opacity: 0.9;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .l-content .bottom-photos .photo-box a {
   width: 100vw;
@@ -944,7 +945,7 @@ body {
   }
   .l-content .bottom-photos .photo-box img:hover {
     opacity: 0.9;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   .l-content .bottom-photos .photo-box a {
     width: 100vw;

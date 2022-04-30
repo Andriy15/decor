@@ -781,6 +781,10 @@ body {
   align-items: flex-end;
   margin-top: 100px;
 }
+.l-footer .f-top .box-info .info-icons a:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
 .l-footer .f-top .box-info .info-icons img {
   margin-right: 15px;
   width: 30px;

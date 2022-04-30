@@ -43,13 +43,13 @@ const plugins = () => {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'src/favicon/favicon.ico'),
-                    to: path.resolve(__dirname, 'dist')
+                    from: path.resolve(__dirname, 'src/images'),
+                    to: path.resolve(__dirname, 'dist/images')
                 }
             ]
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css'
+            filename: '[name].css'
         })
     ]
     if(isProd){
@@ -68,11 +68,11 @@ module.exports = {
         photoswipe: './photoswipe.js'
     },
     output: {
-        filename: '[name].[contenthash].js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extensions: ['.js', '.json', '.png']
+        extensions: ['.js', '.json']
     },
     optimization: {
         splitChunks: {
@@ -91,21 +91,44 @@ module.exports = {
     plugins: plugins(),
     module: {
         rules: [
+            // {
+            //     test: /\.(html)$/,
+            //     use: {
+            //         loader: 'html-loader',
+            //         options: {
+            //             sources: {
+            //                 list: [
+            //                     {
+            //                         tag: "img",
+            //                         type: "src",
+            //                     },
+            //                 ]
+            //             }
+            //         }
+            //     },
+            // },
             {
                 test: /\.css$/,
                 use: cssLoader
             },
             {
-                test: /\.s[ac]ss$/,
-                use: cssLoader('sass-loader')
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
             },
             {
-                test: /\.(.png|.jpg|.jpeg)$/,
-                use: ['file-loader']
-            },
-            {
-                test: /\.ico$/,
-                use:['flle-loader']
+                test: /\.(png|jpg|jpeg|svg)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]',
+                    },
+                }
             },
             {
                 test: /\.m?js$/,

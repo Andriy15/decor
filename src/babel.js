@@ -3,7 +3,7 @@ function initMap() {
     const Kalush = { lat: 49.0445757, lng: 23.2412288 };
     // The map, centered at Kalush
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 7,
+        zoom: 16,
         center: Kalush,
     });
     // The marker, positioned at Kalush
@@ -12,5 +12,5 @@ function initMap() {
         map: map,
     });
     }
-
-    window.initMap = initMap;
+    
+window.initMap = initMap;

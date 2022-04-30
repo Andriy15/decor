@@ -1,14 +1,9 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const { Module } = require('module')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { HotModuleReplacementPlugin } = require('webpack')
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const TerserWebpackPlugin = require('terser-webpack-plugin')
-const { config } = require('process')
-const loader = require('sass-loader')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 
 const isDev = process.env.NODE_ENV === 'development'

@@ -9,8 +9,6 @@ import './photoswipe'
 
 const navToggle = document.querySelector(".navbar_toggle")
 const links = document.querySelector(".main_nav")
-const body = document.querySelector('body')
-const toggle = document.querySelector('show_nav')
 
 
 navToggle.addEventListener('click', () => {
@@ -23,8 +21,8 @@ navToggle.addEventListener('click', () => {
             window.scroll()
         }
     }
-
 })
+
 
 
 

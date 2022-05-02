@@ -797,7 +797,7 @@
             height: 3100px;
     
             .cont-img {
-                width: 95vw;
+                width: 100vw;
                 height: 300px;
             }
     
@@ -880,7 +880,7 @@
             .photo-box{
                 display: grid;
                 grid-template-columns: repeat(2,auto);
-                grid-gap: 15px 15px;
+                grid-gap: 10px 10px;
                 min-height: 100%;
 
                 .photo {

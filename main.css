@@ -1206,7 +1206,7 @@ body {
     height: 3100px;
   }
   .l-content .content-middle .cont-img {
-    width: 95vw;
+    width: 100vw;
     height: 300px;
   }
   .l-content .content-middle .content-text {
@@ -1279,7 +1279,7 @@ body {
   .l-content .bottom-photos .photo-box {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 15px 15px;
+    grid-gap: 10px 10px;
     min-height: 100%;
   }
   .l-content .bottom-photos .photo-box .photo {
@@ -1424,6 +1424,7 @@ a {
 }
 
 .navbar {
+  z-index: 11;
   display: flex;
   justify-content: space-between;
   width: 100vw;
@@ -1486,7 +1487,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
     background-color: #ffffff;

@@ -9,12 +9,13 @@
             flex-direction: column;
             align-items: center;
             margin-top: 75px;
-        
+
             img {
-                width: 400px;
-                height: 400px;
+                box-sizing: border-box;
+                width: 480px;
+                height: 480px;
                 border: 18px solid $color-white;
-                @include border-radius(50%)
+                @include border-radius(50%);
             }
 
             h1 {
@@ -259,76 +260,66 @@
 }
 
 .l-footer {
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
-    margin-top: 200px;
+    background: $color-gray;
+
+    h1 {
+        text-align: center;
+    }
+
     .f-top {
         width: 100vw;
-        height: 700px;
-        background: $color-bg;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
 
-        .box-info {
-            width: 500px;
-            height: 500px;
+        .get-contact {
+            padding: 30px;
+            width: 220px;
+            height: 180px;
             display: flex;
             flex-direction: column;
-            padding-left: 100px;
-            padding-top: 200px;
+            align-items: center;
 
             span {
-                font-size: rem(50px);
-                margin-bottom: 10px;
-                margin-left: 6px;
+                margin-top: 20px;
+                font-size: rem(19px);;
             }
 
             p {
-                margin: 0;
-                margin: 6px;
+                margin-top: 20px;
+                text-align: center;
             }
 
-            a {
-                text-decoration: none;
-                color: $color-a;
-                font-size: rem(18px);
-
-                &.underl{
-                    border-bottom: 2px solid $color-a;
-
-                    &:hover {
-                        border: none;
-                    }
-                }
-
-                &:hover {
-                    cursor: pointer;
-                }
+            svg {
+                width: 50px;
+                height: 50px;
+                opacity: 0.4;
             }
+        }
+    }
 
-            .info-icons {
-                display: flex;
-                align-items: flex-end;
-                margin-top: 100px;
+    .f-bottom {
+        width: 100vh;
+        height: 500px;
+        background: $color-gray;
+        display: flex;
 
-                a:hover {
-                    opacity: 0.7;
-                    transform: scale(1.1);
-                }
+        .form-l {
+            width: 510px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
 
-                img {
-                    margin-right: 15px;
-                    width: 30px;
-                    height: 30px;
-                }
+            input {
+                padding: 20px;
             }
         }
 
-        #map {
-            width: 550px;
-            height: 550px;
+        .form-r {
+            display: flex;
+            flex-direction: column;
         }
     }
 }
@@ -648,78 +639,10 @@
             }
         }
     }
-
-    .l-footer {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin-top: 200px;
-        .f-top {
-            width: 100vw;
-            height: 1000px;
-            background: $color-bg;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-    
-            .box-info {
-                width: 57vw;
-                height: 500px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                padding-left: 0;
-    
-                span {
-                    font-size: rem(30px);
-                    margin-bottom: 10px;
-                }
-    
-                p {
-                    margin: 0;
-                    margin: 6px;
-                }
-    
-                a {
-                    text-decoration: none;
-                    color: $color-a;
-                    font-size: rem(13px);
-    
-                    &.underl{
-                        border-bottom: 2px solid $color-a;
-    
-                        &:hover {
-                            border: none;
-                        }
-                    }
-    
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-    
-                .info-icons {
-                    display: flex;
-                    align-items: flex-end;
-                    margin-top: 100px;
-    
-                    img {
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
-            }
-    
-            #map {
-                max-width: 590px;
-                max-height: 550px;
-                margin-bottom: 20px;
-            }
-        }
-    }
-    
+    //
+    //.l-footer {
+    //
+    //}
 }
 
 
@@ -996,76 +919,10 @@
             }
         }
     }
-    
-    .l-footer {
-        display: flex;
-        flex-direction: column;
-        margin-top: 200px;
-
-        .f-top {
-            width: 100vw;
-            height: 1000px;
-            background: $color-bg;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-    
-            .box-info {
-                width: 80vw;
-                height: 500px;
-                display: flex;
-                flex-direction: column;
-                padding-left: 0;
-    
-                span {
-                    font-size: rem(30px);
-                    margin-bottom: 10px;
-                    margin-left: 6px;
-                }
-    
-                p {
-                    margin: 0;
-                    margin: 6px;
-                }
-    
-                a {
-                    text-decoration: none;
-                    color: $color-a;
-                    font-size: rem(13px);
-    
-                    &.underl{
-                        border-bottom: 2px solid $color-a;
-    
-                        &:hover {
-                            border: none;
-                        }
-                    }
-    
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-    
-                .info-icons {
-                    display: flex;
-                    align-items: flex-end;
-                    margin-top: 100px;
-    
-                    img {
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
-            }
-    
-            #map {
-                width: 375px;
-                height: 550px;
-                margin-bottom: 20px;
-            }
-        }
-    }
+    //
+    //.l-footer {
+    //
+    //}
 }
 
 

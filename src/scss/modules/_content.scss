@@ -397,15 +397,19 @@
                         margin: 0;
                         margin-top: 10px;
                     }
+
+                    span{
+                        width: 300px;
+                        .svg-header {
+                            fill: $color-yellow;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
                 }
             }
         }
-        
-        .svg-header {
-            fill: $color-yellow;
-            width: 50px;
-            height: 50px;
-        }
+
     
         .content-middle {
             display: flex;
@@ -793,15 +797,20 @@
                         margin: 0;
                         margin-top: 10px;
                     }
+
+                    span{
+                        width: 300px;
+                        .svg-header {
+                            fill: $color-yellow;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
                 }
             }
         }
         
-        .svg-header {
-            fill: $color-yellow;
-            width: 50px;
-            height: 50px;
-        }
+
     
         .content-middle {
             display: flex;

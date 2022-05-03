@@ -273,6 +273,7 @@
         width: 100vw;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
 
         .get-contact {
             padding: 30px;
@@ -301,25 +302,89 @@
     }
 
     .f-bottom {
-        width: 100vh;
-        height: 500px;
+        width: 100vw;
         background: $color-gray;
         display: flex;
+        justify-content: center;
 
         .form-l {
-            width: 510px;
+            width: 530px;
             height: 400px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
 
             input {
-                padding: 20px;
+                width: 485px;
+                height: 30px;
+                border: none;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-family: inherit;
+                background: $color-white;
+
+                &::placeholder {
+                    opacity: 0.7;
+                }
+            }
+
+            span {
+                font-size: rem(23px);
+                font-weight: 600;
+            }
+
+            p {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                font-size: rem(18px);
+                opacity: 0.5;
+            }
+
+            textarea {
+                padding: 10px;
+                width: 485px;
+                border: none;
+                margin-bottom: 10px;
+
+                &::placeholder {
+                    opacity: 0.7;
+                }
+            }
+
+            .submit {
+                font-size: rem(17px);
+                font-weight: 300;
+                width: 110px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid $color-black;
             }
         }
 
         .form-r {
+            width: 500px;
+            height: auto;
+            padding: 20px;
             display: flex;
             flex-direction: column;
+
+            #map {
+                width: 500px;
+                height: 300px;
+            }
+
+            span {
+                font-size: rem(23px);
+                font-weight: 600;
+            }
+
+            p {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                font-size: rem(18px);
+                opacity: 0.5;
+            }
         }
     }
 }
@@ -570,71 +635,6 @@
     
                 p {
                     opacity: 0.6;
-                }
-            }
-        }
-    }
-    
-    .l-footer {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin-top: 200px;
-        .f-top {
-            width: 100vw;
-            height: 700px;
-            background: $color-bg;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-    
-            .box-info {
-                width: 500px;
-                height: 500px;
-                display: flex;
-                flex-direction: column;
-                padding-left: 100px;
-                padding-top: 200px;
-    
-                span {
-                    font-size: rem(50px);
-                    margin-bottom: 10px;
-                    margin-left: 6px;
-                }
-    
-                p {
-                    margin: 0;
-                    margin: 6px;
-                }
-    
-                a {
-                    text-decoration: none;
-                    color: $color-a;
-                    font-size: rem(18px);
-    
-                    &.underl{
-                        border-bottom: 2px solid $color-a;
-    
-                        &:hover {
-                            border: none;
-                        }
-                    }
-    
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-    
-                .info-icons {
-                    display: flex;
-                    align-items: flex-end;
-                    margin-top: 100px;
-    
-                    img {
-                        margin-right: 15px;
-                        width: 30px;
-                        height: 30px;
-                    }
                 }
             }
         }

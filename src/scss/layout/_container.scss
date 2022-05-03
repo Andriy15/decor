@@ -23,17 +23,15 @@
 
     .l-footer {
         width: 100vw;
-        height: auto;
     }
 }
 
 @media only screen and (max-width: 600px){
     .l-container {
         width: 100vw;
-        height: 7250px;
 
         .content-bottom {
-            height: 1200px;
+            height: 1450px;
         }
     }
 }

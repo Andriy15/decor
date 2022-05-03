@@ -10,7 +10,7 @@ import './photoswipe'
 const navToggle = document.querySelector(".navbar_toggle")
 const links = document.querySelector(".main_nav")
 const navbar = document.querySelector('.navbar')
-const body = document.querySelector('body')
+// const body = document.querySelector('body')
 
 
 navToggle.addEventListener('click', () => {

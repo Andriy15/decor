@@ -516,16 +516,14 @@ body {
 }
 .l-container .l-footer {
   width: 100vw;
-  height: auto;
 }
 
 @media only screen and (max-width: 600px) {
   .l-container {
     width: 100vw;
-    height: 7250px;
   }
   .l-container .content-bottom {
-    height: 1200px;
+    height: 1450px;
   }
 }
 .l-content .content-top {
@@ -548,9 +546,11 @@ body {
 }
 .l-content .content-top .content-block h1 {
   font-weight: 100;
+  opacity: 0.6;
   font-size: 3.125rem;
 }
 .l-content .content-top .content-block span {
+  width: 760px;
   text-align: center;
   font-size: 2.8125rem;
 }
@@ -560,7 +560,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 150px;
   width: 100vw;
 }
 .l-content .content-top .flex-cont .flex-elem {
@@ -569,25 +569,32 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 1;
-  width: 300px;
-  height: 240px;
-  margin: 20px;
+  width: 270px;
+  height: 220px;
+  margin: 10px;
   background: #ffffff;
   text-align: center;
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
 .l-content .content-top .flex-cont .flex-elem h4 {
-  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.375rem;
   margin: 0;
+  font-weight: 500;
   margin-top: 5px;
+  letter-spacing: 3px;
 }
 .l-content .content-top .flex-cont .flex-elem p {
+  word-spacing: 2px;
   margin: 0;
   margin-top: 10px;
 }
-.l-content .svg-header {
+.l-content .content-top .flex-cont .flex-elem span {
+  width: 250px;
+}
+.l-content .content-top .flex-cont .flex-elem span .svg-header {
   fill: rgb(255, 202, 77);
   width: 50px;
   height: 50px;
@@ -600,7 +607,7 @@ body {
 .l-content .content-middle .cont-img {
   position: relative;
   bottom: 50px;
-  width: 95vw;
+  width: 80vw;
   height: 700px;
 }
 .l-content .content-middle .content-text {
@@ -766,6 +773,7 @@ body {
 .l-footer .f-top .box-info span {
   font-size: 3.125rem;
   margin-bottom: 10px;
+  margin-left: 6px;
 }
 .l-footer .f-top .box-info p {
   margin: 0;
@@ -1037,6 +1045,7 @@ body {
   .l-footer .f-top .box-info span {
     font-size: 3.125rem;
     margin-bottom: 10px;
+    margin-left: 6px;
   }
   .l-footer .f-top .box-info p {
     margin: 0;
@@ -1159,6 +1168,7 @@ body {
     font-size: 2.8125rem;
   }
   .l-content .content-top .content-block span {
+    width: 300px;
     text-align: center;
     font-size: 2.1875rem;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
@@ -1211,7 +1221,6 @@ body {
   }
   .l-content .content-middle .content-text {
     width: 65vw;
-    height: 1000px;
   }
   .l-content .content-middle .content-text p {
     text-align: center;
@@ -1222,8 +1231,6 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    position: relative;
-    top: 900px;
   }
   .l-content .content-middle .middle-part span {
     width: 100vw;
@@ -1294,7 +1301,7 @@ body {
   }
   .l-content .bottom-photos .photo-box img:hover {
     opacity: 0.9;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   .l-content .bottom-photos .photo-box a {
     width: 100vw;
@@ -1330,35 +1337,40 @@ body {
     width: 100vw;
     height: 300px;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
-  .l-content .bottom-developer .quotes img {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 40px;
-  }
   .l-content .bottom-developer .dev {
+    position: relative;
+    top: 40px;
+    padding: 30px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .l-content .bottom-developer .dev span {
-    margin-left: 50px;
+    width: 250px;
     font-weight: 300;
     font-size: 1.25rem;
     filter: brightness(0.75);
     color: rgb(255, 202, 77);
   }
   .l-content .bottom-developer .dev p {
-    opacity: 0.6;
+    padding-top: 20px;
+    color: #d9d900;
+  }
+  .l-content .bottom-developer .quotes img {
+    width: 180px;
+    height: 160px;
+    left: 0;
+    opacity: 0.7;
   }
 
   .l-footer {
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
     margin-top: 200px;
   }
   .l-footer .f-top {
@@ -1380,6 +1392,7 @@ body {
   .l-footer .f-top .box-info span {
     font-size: 1.875rem;
     margin-bottom: 10px;
+    margin-left: 6px;
   }
   .l-footer .f-top .box-info p {
     margin: 0;

@@ -839,6 +839,9 @@ body {
   background: transparent;
   border: 2px solid #000000;
 }
+.l-footer .f-bottom .form-l .submit:hover {
+  border: none;
+}
 .l-footer .f-bottom .form-r {
   width: 500px;
   height: auto;
@@ -1162,6 +1165,9 @@ body {
     height: 50px;
     background: transparent;
     border: 2px solid #000000;
+  }
+  .l-footer .f-bottom .form-l .submit:hover {
+    border: none;
   }
   .l-footer .f-bottom .form-r {
     width: 300px;
@@ -1511,6 +1517,9 @@ body {
     height: 50px;
     background: transparent;
     border: 2px solid #000000;
+  }
+  .l-footer .f-bottom .form-l .submit:hover {
+    border: none;
   }
   .l-footer .f-bottom .form-r {
     width: 320px;

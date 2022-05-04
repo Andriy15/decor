@@ -655,10 +655,11 @@
             display: grid;
             grid-template-columns: repeat(2, auto);
             grid-gap: 20px;
+            grid-column-gap: 60px;
 
             .get-contact {
                 padding: 40px;
-                width: 220px;
+                width: 240px;
                 height: 180px;
                 display: flex;
                 flex-direction: column;
@@ -689,8 +690,9 @@
             justify-content: center;
 
             .form-l {
-                width: 310px;
-                height: 400px;
+                width: 280px;
+                margin-right: 40px;
+                height: 420px;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
@@ -744,7 +746,7 @@
             }
 
             .form-r {
-                max-width: 300px;
+                width: 300px;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
@@ -1153,7 +1155,7 @@
             }
 
             .form-r {
-                width: 100vw;
+                width: 320px;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;

@@ -11,6 +11,7 @@
     <link type="image/x-icon" rel="shortcut icon" href="./favicon/favicon.ico">
     <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Decor-IF</title>
 </head>
 <body>
@@ -218,24 +219,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="link">
-                <a href="https://twitter.com/cikulaj" target="_blank">Посилання на Twitter</a>
-            </div>
-
-            <div class="bottom-developer">
-                <div class="quotes">
-                    <img
-                            src="images/quote.svg"
-                            alt="">
-                </div>
-
-                <div class="dev">
-                    <span class="upper"><strong>andrii chykulai</strong>, developer</span>
-                    <p>Відгуки клієнтів</p>
-                </div>
-
-            </div>
         </div>
     </section>
 
@@ -274,14 +257,14 @@
         </div>
 
         <div class="f-bottom">
-            <div class="form-l">
+            <form class="form-l" action="#">
                 <span>GET A FREE CASE EVALUATION TODAY!</span>
                 <p>AVAILABLE 24 HOURS A DAY!</p>
-                <input type="text" placeholder="Enter your name">
-                <input type="text" placeholder="Enter a valid email address">
+                <input type="text" placeholder="Enter your name" data-toggle="tooltip" title="Pleas fill in this field">
+                <input type="text" placeholder="Enter a valid email address" data-toggle="tooltip" title="Pleas fill in this field">
                 <textarea rows="5" cols="35" placeholder="Enter your message"></textarea>
                 <input type="submit" class="submit">
-            </div>
+            </form>
 
             <div class="form-r">
                 <span class="upper">we are here</span>

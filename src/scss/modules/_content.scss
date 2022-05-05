@@ -69,7 +69,7 @@
                 }
 
                 span{
-                    width: 250px;
+                    width: 270px;
                     .svg-header {
                         fill: $color-yellow;
                         width: 50px;
@@ -269,6 +269,32 @@
                 &::placeholder {
                     opacity: 0.7;
                 }
+
+                &:invalid {
+                    border: 2px solid #900;
+                    background-color: #FDD;
+                }
+
+
+                &:focus:invalid {
+                    outline: none;
+                }
+            }
+
+            .error {
+                width  : 100%;
+                padding: 0;
+
+                font-size: 80%;
+                color: white;
+                background-color: #900;
+                border-radius: 0 0 5px 5px;
+
+                box-sizing: border-box;
+            }
+
+            .error.active {
+                padding: 0.3em;
             }
 
             span {
@@ -451,14 +477,12 @@
                 .part-box {
                     width: 100%;
                     display: flex;
-                    flex-wrap: wrap;
                     justify-content: center;
                     align-items: center;
                     margin-top: 30px;
                     margin-bottom: 100px;
     
                     img {
-                        margin: 0px 100px;
                         margin-top: 40px;
                         filter: brightness(0.2);
                         width: 160px;
@@ -467,6 +491,12 @@
                 }
             }
         }
+
+@media only screen and(max-width: 800px) {
+    .part-box {
+        flex-wrap: wrap;
+    }
+}
     
         .bottom-info {
             height: 800px;

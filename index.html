@@ -219,24 +219,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="link">
-                <a href="https://twitter.com/cikulaj" target="_blank">Посилання на Twitter</a>
-            </div>
-
-            <div class="bottom-developer">
-                <div class="quotes">
-                    <img
-                            src="images/quote.svg"
-                            alt="">
-                </div>
-
-                <div class="dev">
-                    <span class="upper"><strong>andrii chykulai</strong>, developer</span>
-                    <p>Відгуки клієнтів</p>
-                </div>
-
-            </div>
         </div>
     </section>
 
@@ -275,14 +257,16 @@
         </div>
 
         <div class="f-bottom">
-            <div class="form-l">
+            <form class="form-l">
                 <span>GET A FREE CASE EVALUATION TODAY!</span>
                 <p>AVAILABLE 24 HOURS A DAY!</p>
-                <input type="text" placeholder="Enter your name" data-toggle="tooltip" title="Pleas fill in this field">
-                <input type="text" placeholder="Enter a valid email address" data-toggle="tooltip" title="Pleas fill in this field">
+                <input type="text" placeholder="Enter your name" data-toggle="tooltip" title="Pleas fill in this field" class="name" required minlength="2">
+                <span class="error" aria-live="polite"></span>
+                <input type="text" placeholder="Enter a valid email address" data-toggle="tooltip" title="Pleas fill in this field" class="email" required minlength="8">
+                <span class="error" aria-live="polite"></span>
                 <textarea rows="5" cols="35" placeholder="Enter your message"></textarea>
                 <input type="submit" class="submit">
-            </div>
+            </form>
 
             <div class="form-r">
                 <span class="upper">we are here</span>

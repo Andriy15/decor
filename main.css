@@ -1258,7 +1258,7 @@ body {
   }
   .l-content .bottom-photos {
     width: 100vw;
-    height: auto;
+    height: 475px;
   }
   .l-content .bottom-photos .photo-box {
     display: grid;

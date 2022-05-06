@@ -69,6 +69,10 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
+                test: /\.php$/,
+                use: ['php-loader', 'html-minify']
+            },
+            {
                 test: /\.(.png|.jpg|.jpeg|.svg)$/,
                 use: ['file-loader']
             },

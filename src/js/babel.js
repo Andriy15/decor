@@ -1,15 +1,13 @@
 const navToggle = document.querySelector(".navbar_toggle")
 const links = document.querySelector(".main_nav")
 const navbar = document.querySelector('.navbar')
-const submit = document.querySelector('.submit')
 const form = document.querySelector('.form-l')
-const error = document.querySelector('.error')
 
-submit.addEventListener('click', () => {
-    if (form.validity.valid){
-        alert('data was sent')
-    }
+
+form.addEventListener('submit', () => {
+    alert('Ваші дані успішно відправлені')
 })
+
 
 
 function initMap() {

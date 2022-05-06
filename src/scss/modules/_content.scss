@@ -202,6 +202,7 @@
 }
 
 .l-footer {
+    padding-top: 80px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -271,30 +272,14 @@
                 }
 
                 &:invalid {
-                    border: 2px solid #900;
-                    background-color: #FDD;
+                    background-color: $color-white;
                 }
 
 
                 &:focus:invalid {
                     outline: none;
+                    border: 2px solid #900;
                 }
-            }
-
-            .error {
-                width  : 100%;
-                padding: 0;
-
-                font-size: 80%;
-                color: white;
-                background-color: #900;
-                border-radius: 0 0 5px 5px;
-
-                box-sizing: border-box;
-            }
-
-            .error.active {
-                padding: 0.3em;
             }
 
             span {
@@ -311,7 +296,7 @@
 
             textarea {
                 padding: 10px;
-                width: 485px;
+                width: 490px;
                 border: none;
                 margin-bottom: 10px;
 
@@ -336,7 +321,7 @@
         }
 
         .form-r {
-            width: 500px;
+            width: 460px;
             height: auto;
             padding: 20px;
             display: flex;
@@ -954,8 +939,10 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             .form-l {
+                margin: 0;
                 width: 310px;
                 height: 400px;
                 padding: 20px;
@@ -1015,7 +1002,7 @@
             }
 
             .form-r {
-                width: 320px;
+                width: 310px;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;

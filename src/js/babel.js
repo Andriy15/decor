@@ -4,8 +4,10 @@ const navbar = document.querySelector('.navbar')
 const form = document.querySelector('.form-l')
 
 
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (e) => {
     alert('Ваші дані успішно відправлені')
+    e.preventDefault()
+    form.reset()
 })
 
 

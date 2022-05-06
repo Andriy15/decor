@@ -747,7 +747,6 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .l-footer .f-bottom .form-l input {
   width: 485px;
@@ -800,6 +799,7 @@ body {
   opacity: 0.7;
 }
 .l-footer .f-bottom .form-l .submit {
+  margin: 0;
   font-size: 1.0625rem;
   font-weight: 300;
   width: 110px;

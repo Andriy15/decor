@@ -10,6 +10,7 @@ form.addEventListener('submit', () => {
 
 
 
+
 function initMap() {
     // The location of Kalush
     const Kalush = { lat: 48.932396, lng: 24.7124942 };

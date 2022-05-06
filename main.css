@@ -700,6 +700,7 @@ body {
 }
 
 .l-footer {
+  padding-top: 80px;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -811,7 +812,7 @@ body {
   border: none;
 }
 .l-footer .f-bottom .form-r {
-  width: 500px;
+  width: 460px;
   height: auto;
   padding: 20px;
   display: flex;

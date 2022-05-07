@@ -2,6 +2,7 @@ const navToggle = document.querySelector(".navbar_toggle")
 const links = document.querySelector(".main_nav")
 const navbar = document.querySelector('.navbar')
 const form = document.querySelector('.form-l')
+const submit = document.querySelector('.submit')
 
 
 form.addEventListener('submit', (e) => {
@@ -10,18 +11,16 @@ form.addEventListener('submit', (e) => {
     form.reset()
 })
 
+submit.addEventListener('click', () => {
 
-
+})
 
 function initMap() {
-    // The location of Kalush
     const Kalush = { lat: 48.932396, lng: 24.7124942 };
-    // The map, centered at Kalush
-    const map = new google.maps.Map(document.getElementById("map"), {
+    const map = new google.maps.Map(document.querySelector("#map"), {
         zoom: 16,
         center: Kalush,
     });
-    // The marker, positioned at Kalush
     const marker = new google.maps.Marker({
         position: Kalush,
         map: map,

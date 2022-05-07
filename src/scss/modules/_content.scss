@@ -279,6 +279,7 @@
                 &:focus:invalid {
                     outline: none;
                     border: 2px solid #900;
+                    background-color: #ffa9a9;
                 }
             }
 
@@ -446,13 +447,13 @@
                     text-align: center;;
                 }
             }
-    
+
             .middle-part {
                 width: 100vw;
                 display: flex;
                 flex-direction: column;
-                
-    
+
+
                 span {
                     width: 100vw;
                     text-align: center;
@@ -460,7 +461,7 @@
                     font-weight: 300;
                     margin-top: 50px;
                 }
-    
+
                 .part-box {
                     width: 100%;
                     display: flex;
@@ -468,7 +469,7 @@
                     align-items: center;
                     margin-top: 30px;
                     margin-bottom: 100px;
-    
+
                     img {
                         margin-top: 40px;
                         filter: brightness(0.2);
@@ -791,7 +792,7 @@
                     margin: 0;
                 }
             }
-    
+
             .middle-part {
                 display: flex;
                 flex-direction: column;
@@ -805,7 +806,7 @@
                     font-weight: 300;
                     margin-top: 50px;
                 }
-    
+
                 .part-box {
                     display: flex;
                     flex-direction: column;
@@ -816,7 +817,7 @@
                     .part {
                         margin: 0;
                     }
-    
+
                     img {
                         margin: 0px 100px;
                         margin-top: 40px;
@@ -855,7 +856,7 @@
     
         .bottom-photos {
             width: 100vw;
-    
+
             .photo-box{
                 display: grid;
                 grid-template-columns: repeat(2,auto);
@@ -877,7 +878,7 @@
                             opacity: 0.9;
                             transform: scale(1.05);
                         }
-                        
+
                     }
         
                     a {
@@ -885,7 +886,7 @@
                         height: 100px;
                     }
             }
-    
+
         }
     }
 

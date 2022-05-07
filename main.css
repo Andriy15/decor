@@ -1233,6 +1233,7 @@ body {
   .l-content .bottom-photos .photo-box {
     display: grid;
     grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
     grid-gap: 10px 10px;
   }
   .l-content .bottom-photos .photo-box .photo {
@@ -1242,7 +1243,7 @@ body {
   .l-content .bottom-photos .photo-box img {
     object-fit: cover;
     max-width: 100vw;
-    height: 150px;
+    max-height: 150px;
     transition: opacity 124ms linear, transform 124ms linear;
   }
   .l-content .bottom-photos .photo-box img:hover {

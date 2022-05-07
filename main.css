@@ -767,6 +767,7 @@ body {
 .l-footer .f-bottom .form-l input:focus:invalid {
   outline: none;
   border: 2px solid #900;
+  background-color: #ffa9a9;
 }
 .l-footer .f-bottom .form-l span {
   font-size: 1.4375rem;
@@ -1202,36 +1203,6 @@ body {
     text-align: center;
     margin: 0;
   }
-  .l-content .content-middle .middle-part {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-  }
-  .l-content .content-middle .middle-part span {
-    width: 100vw;
-    text-align: center;
-    font-size: 3.125rem;
-    font-weight: 300;
-    margin-top: 50px;
-  }
-  .l-content .content-middle .middle-part .part-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-  .l-content .content-middle .middle-part .part-box .part {
-    margin: 0;
-  }
-  .l-content .content-middle .middle-part .part-box img {
-    margin: 0px 100px;
-    margin-top: 40px;
-    filter: brightness(0.2);
-    width: 160px;
-    height: 90px;
-  }
   .l-content .bottom-info {
     width: 100vw;
     height: 800px;
@@ -1258,13 +1229,11 @@ body {
   }
   .l-content .bottom-photos {
     width: 100vw;
-    height: 475px;
   }
   .l-content .bottom-photos .photo-box {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 10px 10px;
-    min-height: 100%;
   }
   .l-content .bottom-photos .photo-box .photo {
     width: 48.5vw;

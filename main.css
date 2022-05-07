@@ -1233,8 +1233,8 @@ body {
   .l-content .bottom-photos .photo-box {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-auto-rows: auto;
     grid-gap: 10px 10px;
+    height: 482px;
   }
   .l-content .bottom-photos .photo-box .photo {
     width: 48.5vw;

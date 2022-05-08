@@ -2,18 +2,14 @@ const navToggle = document.querySelector(".navbar_toggle")
 const links = document.querySelector(".main_nav")
 const navbar = document.querySelector('.navbar')
 const form = document.querySelector('.form-l')
-const submit = document.querySelector('.submit')
+const h1 = document.querySelector('h1')
 
-
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', e => {
     alert('Ваші дані успішно відправлені')
     e.preventDefault()
     form.reset()
 })
 
-submit.addEventListener('click', () => {
-
-})
 
 function initMap() {
     const Kalush = { lat: 48.932396, lng: 24.7124942 };
@@ -55,6 +51,8 @@ window.addEventListener('scroll', function(){
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
+
+
 
 
 

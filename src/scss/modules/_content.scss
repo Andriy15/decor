@@ -93,7 +93,7 @@
             height: 700px;
         }
 
-        .content-text {
+        .middle-text {
             width: 65vw;
 
             p { 
@@ -210,6 +210,7 @@
 
     h1 {
         text-align: center;
+        letter-spacing: 2px;
     }
 
     .f-top {
@@ -316,7 +317,9 @@
                 cursor: pointer;
 
                 &:hover {
-                    border: none;
+                    color: $color-white;
+                    background-color: $color-black;
+                    transition: .2s linear;
                 }
             }
         }
@@ -438,7 +441,7 @@
                 height: 700px;
             }
     
-            .content-text {
+            .middle-text {
                 width: 65vw;
     
                 p { 
@@ -872,7 +875,7 @@
                 height: 300px;
             }
     
-            .content-text {
+            .middle-text {
                 width: 100vw;
 
                 p { 

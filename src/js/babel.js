@@ -2,7 +2,6 @@ const navToggle = document.querySelector(".navbar_toggle")
 const links = document.querySelector(".main_nav")
 const navbar = document.querySelector('.navbar')
 const form = document.querySelector('.form-l')
-const h1 = document.querySelector('h1')
 
 form.addEventListener('submit', e => {
     alert('Ваші дані успішно відправлені')

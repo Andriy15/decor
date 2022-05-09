@@ -549,11 +549,11 @@ body {
   font-size: 3.125rem;
 }
 .l-content .content-top .content-block span {
-  width: 760px;
+  width: 100%;
   text-align: center;
   font-size: 2.8125rem;
 }
-.l-content .content-top .flex-cont {
+.l-content .content-top .block-item {
   font-family: "Open Sans", sans-serif;
   position: relative;
   display: flex;
@@ -562,7 +562,7 @@ body {
   margin-top: 150px;
   width: 100vw;
 }
-.l-content .content-top .flex-cont .flex-elem {
+.l-content .content-top .block-item .flex-elem {
   padding: 25px;
   padding-top: 60px;
   display: flex;
@@ -577,7 +577,7 @@ body {
   -moz-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
-.l-content .content-top .flex-cont .flex-elem h4 {
+.l-content .content-top .block-item .flex-elem h4 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.375rem;
   margin: 0;
@@ -585,15 +585,15 @@ body {
   margin-top: 5px;
   letter-spacing: 3px;
 }
-.l-content .content-top .flex-cont .flex-elem p {
+.l-content .content-top .block-item .flex-elem p {
   word-spacing: 2px;
   margin: 0;
   margin-top: 10px;
 }
-.l-content .content-top .flex-cont .flex-elem span {
+.l-content .content-top .block-item .flex-elem span {
   width: 270px;
 }
-.l-content .content-top .flex-cont .flex-elem span .svg-header {
+.l-content .content-top .block-item .flex-elem span .svg-header {
   fill: rgb(255, 202, 77);
   width: 50px;
   height: 50px;
@@ -609,10 +609,10 @@ body {
   width: 80vw;
   height: 700px;
 }
-.l-content .content-middle .content-text {
+.l-content .content-middle .middle-text {
   width: 65vw;
 }
-.l-content .content-middle .content-text p {
+.l-content .content-middle .middle-text p {
   line-height: 30px;
   text-align: center;
 }
@@ -708,6 +708,7 @@ body {
 }
 .l-footer h1 {
   text-align: center;
+  letter-spacing: 2px;
 }
 .l-footer .f-top {
   width: 100vw;
@@ -744,7 +745,6 @@ body {
 }
 .l-footer .f-bottom .form-l {
   width: 530px;
-  height: 400px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -799,7 +799,9 @@ body {
   cursor: pointer;
 }
 .l-footer .f-bottom .form-l .submit:hover {
-  border: none;
+  color: #ffffff;
+  background-color: #000000;
+  transition: 0.2s linear;
 }
 .l-footer .f-bottom .form-r {
   width: 460px;
@@ -850,7 +852,7 @@ body {
     text-align: center;
     font-size: 2.8125rem;
   }
-  .l-content .content-top .flex-cont {
+  .l-content .content-top .block-item {
     font-family: "Open Sans", sans-serif;
     position: relative;
     display: flex;
@@ -859,7 +861,7 @@ body {
     margin-top: 100px;
     width: 100vw;
   }
-  .l-content .content-top .flex-cont .flex-elem {
+  .l-content .content-top .block-item .flex-elem {
     padding: 25px;
     padding-top: 60px;
     display: flex;
@@ -874,19 +876,19 @@ body {
     -moz-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
   }
-  .l-content .content-top .flex-cont .flex-elem h4 {
+  .l-content .content-top .block-item .flex-elem h4 {
     font-size: 1.25rem;
     margin: 0;
     margin-top: 5px;
   }
-  .l-content .content-top .flex-cont .flex-elem p {
+  .l-content .content-top .block-item .flex-elem p {
     margin: 0;
     margin-top: 10px;
   }
-  .l-content .content-top .flex-cont .flex-elem span {
+  .l-content .content-top .block-item .flex-elem span {
     width: 300px;
   }
-  .l-content .content-top .flex-cont .flex-elem span .svg-header {
+  .l-content .content-top .block-item .flex-elem span .svg-header {
     fill: rgb(255, 202, 77);
     width: 50px;
     height: 50px;
@@ -902,10 +904,10 @@ body {
     width: 95vw;
     height: 700px;
   }
-  .l-content .content-middle .content-text {
+  .l-content .content-middle .middle-text {
     width: 65vw;
   }
-  .l-content .content-middle .content-text p {
+  .l-content .content-middle .middle-text p {
     line-height: 30px;
     text-align: center;
   }
@@ -1147,14 +1149,14 @@ body {
     font-size: 2.1875rem;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
   }
-  .l-content .content-top .flex-cont {
+  .l-content .content-top .block-item {
     position: relative;
     display: flex;
     justify-content: center;
     margin-top: 100px;
     width: 100vw;
   }
-  .l-content .content-top .flex-cont .flex-elem {
+  .l-content .content-top .block-item .flex-elem {
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -1169,19 +1171,19 @@ body {
     -moz-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
   }
-  .l-content .content-top .flex-cont .flex-elem h4 {
+  .l-content .content-top .block-item .flex-elem h4 {
     font-size: 1.25rem;
     margin: 0;
     margin-top: 5px;
   }
-  .l-content .content-top .flex-cont .flex-elem p {
+  .l-content .content-top .block-item .flex-elem p {
     margin: 0;
     margin-top: 10px;
   }
-  .l-content .content-top .flex-cont .flex-elem span {
+  .l-content .content-top .block-item .flex-elem span {
     width: 300px;
   }
-  .l-content .content-top .flex-cont .flex-elem span .svg-header {
+  .l-content .content-top .block-item .flex-elem span .svg-header {
     fill: rgb(255, 202, 77);
     width: 50px;
     height: 50px;
@@ -1196,10 +1198,10 @@ body {
     width: 100vw;
     height: 300px;
   }
-  .l-content .content-middle .content-text {
+  .l-content .content-middle .middle-text {
     width: 100vw;
   }
-  .l-content .content-middle .content-text p {
+  .l-content .content-middle .middle-text p {
     text-align: center;
     margin: 0;
   }

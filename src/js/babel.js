@@ -2,6 +2,32 @@ const navToggle = document.querySelector(".navbar_toggle")
 const links = document.querySelector(".main_nav")
 const navbar = document.querySelector('.navbar')
 const form = document.querySelector('.form-l')
+const submit = document.querySelector('.submit')
+const home = document.querySelector('.nav_links')
+const modal = document.querySelector('.modal');
+const span = document.querySelector(".close");
+
+
+// Get
+home.addEventListener('click', () => {
+    modal.style.display = "block";
+})
+
+// When the user clicks on <span> (x), close the modal
+span.addEventListener('click', () => {
+    modal.style.display = "none";
+})
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click', event => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+})
+
+
+
 
 form.addEventListener('submit', e => {
     alert('Ваші дані успішно відправлені')
@@ -30,6 +56,7 @@ navToggle.addEventListener('click', () => {
         window.onscroll =  function (){
             window.scrollTo(0, 0);
         }
+
     }else {
         window.onscroll = () => {
             window.scroll()
@@ -41,7 +68,8 @@ navToggle.addEventListener('click', () => {
 window.addEventListener('scroll', function(){
     if(window.scrollY > 30) {
         navbar.style.position = 'fixed'
-    }else {
+    }
+    else {
         navbar.style.position = ''
     }
 })

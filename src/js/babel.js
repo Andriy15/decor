@@ -3,30 +3,9 @@ const links = document.querySelector(".main_nav")
 const navbar = document.querySelector('.navbar')
 const form = document.querySelector('.form-l')
 const submit = document.querySelector('.submit')
-const home = document.querySelector('.nav_links')
+const liLinks = document.querySelector('.nav_links')
 const modal = document.querySelector('.modal');
 const span = document.querySelector(".close");
-
-
-// Get
-home.addEventListener('click', () => {
-    modal.style.display = "block";
-})
-
-// When the user clicks on <span> (x), close the modal
-span.addEventListener('click', () => {
-    modal.style.display = "none";
-})
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.addEventListener('click', event => {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-})
-
-
 
 
 form.addEventListener('submit', e => {
@@ -78,8 +57,6 @@ window.addEventListener('scroll', function(){
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
-
-
 
 
 
